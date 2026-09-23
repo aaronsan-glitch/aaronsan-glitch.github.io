@@ -177,6 +177,19 @@ main > section:not(#sobre-mi) > h2 {
 
 
 /* -------------------- */
+/* HABILITATS           */
+/* -------------------- */
+
+.habilitats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* -------------------- */
 /* TARGETES             */
 /* -------------------- */
 
@@ -191,6 +204,18 @@ main > section:not(#sobre-mi) > h2 {
     border-radius: 12px;
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+
+    color: #6c4df6;
+}
+
+.card p {
+    line-height: 1.6;
+
+    color: #555;
 }
 
 
@@ -255,5 +280,9 @@ footer {
     .foto-perfil {
         width: 250px;
         height: 310px;
+    }
+
+    .habilitats-grid {
+        grid-template-columns: 1fr;
     }
 }
