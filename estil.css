@@ -4,8 +4,11 @@ html {
 
 body {
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background-color: #ffffff;
+
     color: #222;
 }
 
@@ -22,10 +25,12 @@ body {
     justify-content: space-between;
 
     max-width: 1200px;
+
     margin: auto;
 
     padding: 0 30px;
 }
+
 
 .logo {
     font-size: 22px;
@@ -36,10 +41,13 @@ body {
     text-decoration: none;
 }
 
+
 .menu {
     display: flex;
+
     gap: 30px;
 }
+
 
 .menu a {
     text-decoration: none;
@@ -51,9 +59,11 @@ body {
     transition: color 0.2s ease;
 }
 
+
 .menu a:hover {
     color: #6c4df6;
 }
+
 
 
 /* -------------------- */
@@ -70,16 +80,21 @@ body {
     padding: 60px 30px;
 }
 
+
 .sobre-mi-contingut {
     max-width: 1100px;
+
     width: 100%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 80px;
 }
+
 
 
 /* TEXT SOBRE MI */
@@ -88,14 +103,17 @@ body {
     flex: 1;
 }
 
+
 .sobre-mi-text h1 {
     font-size: 52px;
 
     margin-bottom: 20px;
 }
 
+
 .sobre-mi-text h2 {
     font-size: 24px;
+
     font-weight: normal;
 
     color: #555;
@@ -103,8 +121,10 @@ body {
     margin-bottom: 25px;
 }
 
+
 .sobre-mi-text p {
     font-size: 18px;
+
     line-height: 1.7;
 
     color: #666;
@@ -113,12 +133,14 @@ body {
 }
 
 
+
 /* BOTÓ PROJECTES */
 
 .boto-projectes {
     display: inline-block;
 
     background-color: #6c4df6;
+
     color: white;
 
     text-decoration: none;
@@ -129,12 +151,18 @@ body {
 
     font-weight: bold;
 
-    transition: transform 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
 }
+
 
 .boto-projectes:hover {
     transform: translateY(-2px);
+
+    background-color: #593be0;
 }
+
 
 
 /* FOTO */
@@ -143,16 +171,20 @@ body {
     flex: 0 0 320px;
 }
 
+
 .foto-perfil {
     width: 320px;
+
     height: 400px;
 
     object-fit: cover;
 
     border-radius: 20px;
 
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15);
 }
+
 
 
 /* -------------------- */
@@ -160,20 +192,22 @@ body {
 /* -------------------- */
 
 main > section:not(#sobre-mi) {
-    max-width: 900px;
+    max-width: 950px;
 
     margin: auto;
 
     padding: 70px 20px;
 }
 
+
 main > section:not(#sobre-mi) > h2 {
     font-size: 32px;
 
     text-align: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
+
 
 
 /* -------------------- */
@@ -183,14 +217,16 @@ main > section:not(#sobre-mi) > h2 {
 .habilitats-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, 1fr);
 
     gap: 20px;
 }
 
 
+
 /* -------------------- */
-/* TARGETES             */
+/* TARGETES GENERALS    */
 /* -------------------- */
 
 .card {
@@ -201,10 +237,13 @@ main > section:not(#sobre-mi) > h2 {
     margin-bottom: 20px;
 
     border: 1px solid #e5e5e5;
+
     border-radius: 12px;
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
 
 .card h3 {
     margin-top: 0;
@@ -212,11 +251,211 @@ main > section:not(#sobre-mi) > h2 {
     color: #6c4df6;
 }
 
+
 .card p {
     line-height: 1.6;
 
     color: #555;
 }
+
+
+
+/* -------------------- */
+/* PROJECTES            */
+/* -------------------- */
+
+.projectes-descripcio {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* FILTRES */
+
+.filtres-projectes {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+}
+
+
+.filtre {
+    background-color: white;
+
+    color: #555;
+
+    border: 1px solid #dddddd;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+.filtre:hover {
+    border-color: #6c4df6;
+
+    color: #6c4df6;
+}
+
+
+
+/* BOTÓ DEL FILTRE ACTIU */
+
+.filtre.actiu {
+    background-color: #6c4df6;
+
+    color: white;
+
+    border-color: #6c4df6;
+}
+
+
+
+/* GRID DE PROJECTES */
+
+.projectes-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+
+/* TARGETA PROJECTE */
+
+.projecte-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.projecte-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+.projecte-card h3 {
+    margin-top: 0;
+
+    font-size: 21px;
+}
+
+
+.projecte-card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+
+/* ETIQUETA TECNOLOGIES */
+
+.tecnologies {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 7px 12px;
+
+    background-color: #f0edff;
+
+    color: #6c4df6;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.eina {
+    font-size: 14px;
+
+    color: #888 !important;
+}
+
+
+
+/* BOTÓ GITHUB */
+
+.boto-github {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 10px 18px;
+
+    background-color: #222;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.boto-github:hover {
+    background-color: #6c4df6;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* -------------------- */
+/* CONTACTE             */
+/* -------------------- */
+
+.contacte-card {
+    text-align: center;
+}
+
 
 
 /* -------------------- */
@@ -231,8 +470,10 @@ footer {
     text-align: center;
 
     background-color: #6c4df6;
+
     color: white;
 }
+
 
 
 /* -------------------- */
@@ -245,13 +486,16 @@ footer {
         padding: 0 20px;
     }
 
+
     .menu {
         display: none;
     }
 
+
     #sobre-mi {
         padding: 40px 20px;
     }
+
 
     .sobre-mi-contingut {
         flex-direction: column;
@@ -261,28 +505,51 @@ footer {
         gap: 40px;
     }
 
+
     .sobre-mi-text h1 {
         font-size: 38px;
     }
+
 
     .sobre-mi-text h2 {
         font-size: 20px;
     }
 
+
     .sobre-mi-text p {
         font-size: 16px;
     }
+
 
     .sobre-mi-foto {
         flex: none;
     }
 
+
     .foto-perfil {
         width: 250px;
+
         height: 310px;
     }
+
 
     .habilitats-grid {
         grid-template-columns: 1fr;
     }
+
+
+    .projectes-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .filtres-projectes {
+        gap: 8px;
+    }
+
+
+    .filtre {
+        padding: 10px 16px;
+    }
+
 }
