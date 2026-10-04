@@ -609,4 +609,16 @@ footer {
     .data-formacio {
         min-width: auto;
     }
+    .logo-formacio {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    padding: 5px;
+}
 }
