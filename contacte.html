@@ -12,36 +12,127 @@
 
 <body>
 
-    <header class="topbar">
+    <!-- CAPÇALERA -->
+    <header class="capcalera">
 
-        <a href="index.html" class="logo">
-            Aarón
-        </a>
+        <div class="contenidor">
 
-        <nav class="menu">
-            <a href="index.html">Inici</a>
-            <a href="sobre-mi.html">Sobre mi</a>
-            <a href="projectes.html">Projectes</a>
-            <a href="contacte.html">Contacte</a>
-        </nav>
+            <a href="index.html" class="logo">
+                <img
+                    src="assets/logo-aaron.png"
+                    alt="Logo d'Aarón"
+                    class="logo-img"
+                >
+            </a>
+
+            <nav class="menu">
+                <a href="index.html">Inici</a>
+                <a href="sobre-mi.html">Sobre mi</a>
+                <a href="projectes.html">Projectes</a>
+                <a href="contacte.html">Contacte</a>
+            </nav>
+
+        </div>
 
     </header>
 
 
-    <main>
+    <main class="pagina-contacte">
 
-        <section class="pagina">
+        <div class="contenidor">
 
-            <h1>Contacte</h1>
+            <!-- INTRODUCCIÓ -->
+            <section class="intro-contacte">
 
-            <p>
-                Aquí posaré les meves dades de contacte,
-                GitHub i LinkedIn.
-            </p>
+                <h1>Contacte</h1>
 
-        </section>
+                <p>
+                    Si vols posar-te en contacte amb mi, pots fer-ho
+                    a través del meu correu electrònic, LinkedIn o GitHub.
+                </p>
+
+            </section>
+
+
+            <!-- FORMES DE CONTACTE -->
+            <section class="contactes">
+
+
+                <!-- CORREU -->
+                <div class="targeta-contacte">
+
+                    <h2>Correu electrònic</h2>
+
+                    <p>
+                        aaron.san@insbaixcamp.cat
+                    </p>
+
+                    <a
+                        href="mailto:aaron.san@insbaixcamp.cat"
+                        class="boto-contacte"
+                    >
+                        Enviar correu
+                    </a>
+
+                </div>
+
+
+                <!-- LINKEDIN -->
+                <div class="targeta-contacte">
+
+                    <h2>LinkedIn</h2>
+
+                    <p>
+                        Consulta el meu perfil professional i la meva formació.
+                    </p>
+
+                    <a
+                        href="https://www.linkedin.com/in/aar%C3%B3n-san-jos%C3%A9-casado-568a223b3/?isSelfProfile=true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="boto-contacte"
+                    >
+                        Veure LinkedIn
+                    </a>
+
+                </div>
+
+
+                <!-- GITHUB -->
+                <div class="targeta-contacte">
+
+                    <h2>GitHub</h2>
+
+                    <p>
+                        Consulta els meus repositoris i projectes de programació.
+                    </p>
+
+                    <a
+                        href="https://github.com/aaronsan-glitch"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="boto-contacte"
+                    >
+                        Veure GitHub
+                    </a>
+
+                </div>
+
+
+            </section>
+
+        </div>
 
     </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Aarón San José Casado
+        </p>
+
+    </footer>
 
 </body>
 
