@@ -35,12 +35,13 @@ body {
 }
 
 .logo {
-    color: #087cff;
+    display: flex;
+    align-items: center;
+}
 
-    font-size: 22px;
-    font-weight: bold;
-
-    text-decoration: none;
+.logo-img {
+    width: 120px;
+    height: auto;
 }
 
 .menu {
