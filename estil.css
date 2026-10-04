@@ -683,6 +683,94 @@ body {
 
 
 /* -------------------- */
+/* PÀGINA CONTACTE      */
+/* -------------------- */
+
+.pagina-contacte {
+    padding: 60px 0 80px;
+}
+
+
+/* INTRO CONTACTE */
+
+.intro-contacte {
+    margin-bottom: 40px;
+}
+
+.intro-contacte h1 {
+    font-size: 42px;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.intro-contacte p {
+    color: #9ca7b3;
+
+    line-height: 1.6;
+}
+
+
+/* TARGETES CONTACTE */
+
+.contactes {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.targeta-contacte {
+    padding: 25px;
+
+    background-color: #0d131c;
+
+    border: 1px solid #202c3a;
+
+    border-radius: 10px;
+}
+
+.targeta-contacte h2 {
+    font-size: 20px;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.targeta-contacte p {
+    color: #9ca7b3;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* BOTÓ CONTACTE */
+
+.boto-contacte {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    background-color: #087cff;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.boto-contacte:hover {
+    background-color: #2b91ff;
+}
+
+
+/* -------------------- */
 /* FOOTER               */
 /* -------------------- */
 
@@ -804,6 +892,17 @@ footer {
     }
 
     .intro-projectes {
+        text-align: center;
+    }
+
+
+    /* CONTACTE */
+
+    .contactes {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-contacte {
         text-align: center;
     }
 }
