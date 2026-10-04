@@ -12,36 +12,219 @@
 
 <body>
 
-    <header class="topbar">
+    <!-- CAPÇALERA -->
+    <header class="capcalera">
 
-        <a href="index.html" class="logo">
-            Aarón
-        </a>
+        <div class="contenidor">
 
-        <nav class="menu">
-            <a href="index.html">Inici</a>
-            <a href="sobre-mi.html">Sobre mi</a>
-            <a href="projectes.html">Projectes</a>
-            <a href="contacte.html">Contacte</a>
-        </nav>
+            <a href="index.html" class="logo">
+
+                <img
+                    src="assets/logo-aaron.png"
+                    alt="Logo d'Aarón"
+                    class="logo-img"
+                >
+
+            </a>
+
+
+            <nav class="menu">
+
+                <a href="index.html">Inici</a>
+                <a href="sobre-mi.html">Sobre mi</a>
+                <a href="projectes.html">Projectes</a>
+                <a href="contacte.html">Contacte</a>
+
+            </nav>
+
+        </div>
 
     </header>
 
 
-    <main>
+    <main class="pagina-projectes">
 
-        <section class="pagina">
+        <div class="contenidor">
 
-            <h1>Projectes</h1>
 
-            <p>
-                Aquí mostraré els meus projectes i els podré filtrar
-                per tecnologia.
-            </p>
+            <!-- INTRODUCCIÓ -->
+            <section class="intro-projectes">
 
-        </section>
+                <h1>Projectes</h1>
+
+                <p>
+                    Alguns dels projectes que he desenvolupat
+                    durant la meva formació en DAM.
+                </p>
+
+            </section>
+
+
+            <!-- FILTRES -->
+            <div class="filtres">
+
+                <button
+                    class="filtre"
+                    onclick="filtrarProjectes('tots')"
+                >
+                    Tots
+                </button>
+
+
+                <button
+                    class="filtre"
+                    onclick="filtrarProjectes('web')"
+                >
+                    Web
+                </button>
+
+
+                <button
+                    class="filtre"
+                    onclick="filtrarProjectes('java')"
+                >
+                    Java
+                </button>
+
+            </div>
+
+
+            <!-- PROJECTES -->
+            <section class="llista-projectes">
+
+
+                <!-- PORTAFOLI -->
+                <div class="projecte web">
+
+                    <h2>Portafoli personal</h2>
+
+                    <p>
+                        Desenvolupament del meu portafoli personal
+                        per mostrar els meus projectes, tecnologies,
+                        formació i informació de contacte.
+                    </p>
+
+
+                    <div class="tecnologies-projecte">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>GitHub Pages</span>
+
+                    </div>
+
+
+                    <div class="botons-projecte">
+
+                        <a
+                            href="https://aaronsan-glitch.github.io/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="boto-projecte"
+                        >
+                            Veure projecte
+                        </a>
+
+
+                        <a
+                            href="https://github.com/aaronsan-glitch/aaronsan-glitch.github.io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="boto-projecte boto-github"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GESTOR DE BIBLIOTECA -->
+                <div class="projecte java">
+
+                    <h2>Gestor de Biblioteca</h2>
+
+                    <p>
+                        Aplicació desenvolupada en Java per gestionar
+                        llibres, usuaris i préstecs d'una biblioteca.
+                        Inclou gestió d'estoc, cerques i diferents
+                        funcionalitats de gestió.
+                    </p>
+
+
+                    <div class="tecnologies-projecte">
+
+                        <span>Java</span>
+                        <span>Eclipse</span>
+                        <span>Git</span>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/aaronsan-glitch/Projecte-Gesti-Biblioteca"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="boto-projecte"
+                    >
+                        Veure a GitHub
+                    </a>
+
+                </div>
+
+
+
+                <!-- DUNGEON QUEST -->
+                <div class="projecte java">
+
+                    <h2>Dungeon Quest</h2>
+
+                    <p>
+                        Joc de consola desenvolupat en Java on el jugador
+                        explora una masmorra, lluita contra monstres,
+                        recull tresors i intenta trobar la sortida.
+                    </p>
+
+
+                    <div class="tecnologies-projecte">
+
+                        <span>Java</span>
+                        <span>POO</span>
+                        <span>Eclipse</span>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/aaronsan-glitch/Dungeon-Quest"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="boto-projecte"
+                    >
+                        Veure a GitHub
+                    </a>
+
+                </div>
+
+
+            </section>
+
+        </div>
 
     </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Aarón San José Casado
+        </p>
+
+    </footer>
+
 
     <script src="script.js"></script>
 
