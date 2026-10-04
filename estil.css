@@ -598,27 +598,40 @@ footer {
 
     /* FORMACIÓ */
 
-    .formacio {
-        flex-direction: column;
+   .formacio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-        align-items: flex-start;
+.data-formacio {
+    min-width: 70px;
 
-        gap: 10px;
-    }
+    color: #087cff;
 
-    .data-formacio {
-        min-width: auto;
-    }
-    .logo-formacio {
-    width: 25px;
-    height: 25px;
+    font-weight: bold;
+}
+
+.logo-formacio {
+    width: 70px;
+    height: 45px;
 
     object-fit: contain;
 
     background-color: white;
 
-    border-radius: 8px;
+    border-radius: 6px;
 
-    padding: 5px;
+    padding: 4px;
+}
+
+.info-formacio h3 {
+    margin: 0 0 5px 0;
+}
+
+.info-formacio p {
+    margin: 0;
+
+    color: #9ca7b3;
 }
 }
