@@ -96,6 +96,7 @@ body {
 
 .estat {
     color: #087cff;
+
     margin-bottom: 20px;
 }
 
@@ -108,6 +109,7 @@ body {
 
 .inici h1 span {
     display: block;
+
     color: #087cff;
 }
 
@@ -592,7 +594,7 @@ body {
 }
 
 
-/* LLISTA PROJECTES */
+/* LLISTA DE PROJECTES */
 
 .llista-projectes {
     display: grid;
@@ -613,6 +615,9 @@ body {
     border: 1px solid #202c3a;
 
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .projecte h2 {
@@ -628,7 +633,7 @@ body {
 }
 
 
-/* TECNOLOGIES PROJECTE */
+/* TECNOLOGIES DEL PROJECTE */
 
 .tecnologies-projecte {
     display: flex;
@@ -652,18 +657,14 @@ body {
 }
 
 
-/* BOTONS PROJECTE */
-
-.botons-projecte {
-    display: flex;
-
-    gap: 10px;
-}
+/* BOTÓ PROJECTE */
 
 .boto-projecte {
-    display: inline-block;
+    width: 150px;
 
     padding: 10px 16px;
+
+    margin-top: auto;
 
     background-color: #087cff;
     color: white;
@@ -671,23 +672,13 @@ body {
     border-radius: 6px;
 
     text-decoration: none;
+    text-align: center;
 
     font-weight: bold;
 }
 
 .boto-projecte:hover {
     background-color: #2b91ff;
-}
-
-
-/* BOTÓ GITHUB */
-
-.boto-github {
-    background-color: #202c3a;
-}
-
-.boto-github:hover {
-    background-color: #344050;
 }
 
 
@@ -814,9 +805,5 @@ footer {
 
     .intro-projectes {
         text-align: center;
-    }
-
-    .botons-projecte {
-        flex-wrap: wrap;
     }
 }
