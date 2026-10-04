@@ -1,26 +1,32 @@
+/* -------------------- */
+/* GENERAL              */
+/* -------------------- */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
 
     background-color: #080c12;
     color: white;
 }
 
-
-/* CONTENIDOR GENERAL */
-
 .contenidor {
     max-width: 1100px;
+
     margin: auto;
+
     padding: 0 20px;
 }
 
 
-/* CAPÇALERA */
+/* -------------------- */
+/* CAPÇALERA            */
+/* -------------------- */
 
 .capcalera {
     border-bottom: 1px solid #1f2935;
@@ -30,22 +36,39 @@ body {
     height: 80px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
+
+/* LOGO */
+
 .logo {
     display: flex;
+
     align-items: center;
+
+    text-decoration: none;
 }
 
 .logo-img {
     width: 80px;
-    height: auto;
+
+    height: 60px;
+
+    object-fit: contain;
+
+    display: block;
 }
+
+
+/* MENÚ */
 
 .menu {
     display: flex;
+
     gap: 30px;
 }
 
@@ -60,7 +83,9 @@ body {
 }
 
 
-/* INICI */
+/* -------------------- */
+/* PÀGINA D'INICI       */
+/* -------------------- */
 
 .inici {
     padding: 80px 0;
@@ -68,6 +93,7 @@ body {
 
 .inici-flex {
     display: flex;
+
     align-items: center;
 
     gap: 70px;
@@ -78,7 +104,7 @@ body {
 }
 
 
-/* TEXT */
+/* TEXT INICI */
 
 .estat {
     color: #087cff;
@@ -90,6 +116,7 @@ body {
     font-size: 50px;
 
     margin-top: 0;
+
     margin-bottom: 20px;
 }
 
@@ -101,6 +128,7 @@ body {
 
 .inici h2 {
     font-size: 22px;
+
     font-weight: normal;
 
     color: #d0d6dd;
@@ -112,16 +140,18 @@ body {
     color: #9ca7b3;
 
     font-size: 17px;
+
     line-height: 1.7;
 
     margin-bottom: 30px;
 }
 
 
-/* BOTONS */
+/* BOTONS INICI */
 
 .botons {
     display: flex;
+
     gap: 15px;
 }
 
@@ -137,6 +167,7 @@ body {
 
 .boto-blau {
     background-color: #087cff;
+
     color: white;
 }
 
@@ -155,10 +186,11 @@ body {
 }
 
 
-/* FOTO */
+/* FOTO INICI */
 
 .inici-foto img {
     width: 280px;
+
     height: 360px;
 
     object-fit: cover;
@@ -169,7 +201,7 @@ body {
 }
 
 
-/* RESUM */
+/* RESUM INICI */
 
 .resum {
     display: flex;
@@ -195,6 +227,7 @@ body {
 
 .caixa-resum h3 {
     margin-top: 0;
+
     margin-bottom: 8px;
 }
 
@@ -205,76 +238,141 @@ body {
 }
 
 
-/* FOOTER */
+/* -------------------- */
+/* PÀGINA SOBRE MI      */
+/* -------------------- */
 
-footer {
-    margin-top: 40px;
+.pagina-sobre {
+    padding: 60px 0 80px;
+}
 
+
+/* INTRODUCCIÓ */
+
+.intro-sobre {
+    margin-bottom: 70px;
+}
+
+.intro-sobre h1 {
+    font-size: 42px;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+.text-secundari {
+    color: #9ca7b3;
+
+    margin-bottom: 45px;
+}
+
+
+/* PRESENTACIÓ */
+
+.presentacio {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.foto-sobre {
+    width: 240px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 1px solid #263241;
+}
+
+.text-sobre {
+    flex: 1;
+}
+
+.text-sobre h2 {
+    font-size: 28px;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+.text-sobre h3 {
+    color: #087cff;
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    margin-top: 0;
+
+    margin-bottom: 25px;
+}
+
+.text-sobre p {
+    color: #9ca7b3;
+
+    line-height: 1.7;
+}
+
+
+/* -------------------- */
+/* APARTATS SOBRE MI    */
+/* -------------------- */
+
+.apartat {
+    margin-bottom: 70px;
+}
+
+.apartat > h2 {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+/* TARGETES */
+
+.targeta {
     padding: 25px;
 
-    text-align: center;
+    background-color: #0d131c;
 
-    color: #7f8b98;
+    border: 1px solid #202c3a;
 
-    border-top: 1px solid #1f2935;
+    border-radius: 10px;
+}
+
+.targeta h3 {
+    margin-top: 0;
+}
+
+.targeta p {
+    color: #9ca7b3;
+
+    line-height: 1.6;
+
+    margin-bottom: 0;
 }
 
 
-/* MÒBIL */
-
-@media (max-width: 750px) {
-
-    .capcalera .contenidor {
-        height: auto;
-
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        flex-direction: column;
-
-        gap: 20px;
-    }
-
-    .menu {
-        gap: 15px;
-    }
-
-    .inici-flex {
-        flex-direction: column;
-    }
-
-    .inici-text {
-        text-align: center;
-    }
-
-    .inici h1 {
-        font-size: 38px;
-    }
-
-    .botons {
-        justify-content: center;
-    }
-
-    .inici-foto img {
-        width: 240px;
-        height: 310px;
-    }
-
-    .resum {
-        flex-direction: column;
-    }
-}
-
-/* TECNOLOGIES */
+/* -------------------- */
+/* TECNOLOGIES          */
+/* -------------------- */
 
 .bloc-tecnologies {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .bloc-tecnologies h3 {
-    margin-bottom: 15px;
+    font-size: 17px;
 
-    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .llista-tecnologies {
@@ -298,7 +396,7 @@ footer {
 }
 
 
-/* COLORS DE LES TECNOLOGIES */
+/* COLORS TECNOLOGIES */
 
 .java {
     background-color: #e67e22;
@@ -309,7 +407,7 @@ footer {
 }
 
 .javascript {
-    background-color: #d4b900;
+    background-color: #c9ad00;
 }
 
 .cpp {
@@ -394,4 +492,99 @@ footer {
 
 .trello {
     background-color: #0079bf;
+}
+
+
+/* -------------------- */
+/* FOOTER               */
+/* -------------------- */
+
+footer {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: #7f8b98;
+
+    border-top: 1px solid #1f2935;
+}
+
+
+/* -------------------- */
+/* MÒBIL                */
+/* -------------------- */
+
+@media (max-width: 750px) {
+
+    /* CAPÇALERA */
+
+    .capcalera .contenidor {
+        height: auto;
+
+        padding-top: 20px;
+
+        padding-bottom: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* INICI */
+
+    .inici-flex {
+        flex-direction: column;
+    }
+
+    .inici-text {
+        text-align: center;
+    }
+
+    .inici h1 {
+        font-size: 38px;
+    }
+
+    .botons {
+        justify-content: center;
+    }
+
+    .inici-foto img {
+        width: 240px;
+
+        height: 310px;
+    }
+
+    .resum {
+        flex-direction: column;
+    }
+
+
+    /* SOBRE MI */
+
+    .presentacio {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .foto-sobre {
+        width: 220px;
+
+        height: 280px;
+    }
+
+    .intro-sobre h1 {
+        font-size: 36px;
+    }
 }
