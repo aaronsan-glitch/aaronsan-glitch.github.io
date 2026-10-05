@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="ca">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="estil.css">
-
     <title>Projectes - Aarón</title>
 </head>
 
 <body>
 
-    <!-- CAPÇALERA -->
+    <!-- capçelera -->
     <header class="capcalera">
-
         <div class="contenidor">
-
             <a href="index.html" class="logo">
 
                 <img
                     src="assets/logo-aaron.png"
                     alt="Logo d'Aarón"
-                    class="logo-img"
-                >
-
+                    class="logo-img">
             </a>
 
 
@@ -36,22 +29,17 @@
                 <a href="contacte.html">Contacte</a>
 
             </nav>
-
         </div>
-
     </header>
 
 
     <main class="pagina-projectes">
-
         <div class="contenidor">
 
-
-            <!-- INTRODUCCIÓ -->
+            <!-- introducció -->
             <section class="intro-projectes">
 
                 <h1>Projectes</h1>
-
                 <p>
                     Alguns dels projectes que he desenvolupat
                     durant la meva formació en DAM.
@@ -59,45 +47,20 @@
 
             </section>
 
-
-            <!-- FILTRES -->
+            <!-- filtres -->
             <div class="filtres">
 
-                <button
-                    class="filtre"
-                    onclick="filtrarProjectes('tots')"
-                >
-                    Tots
-                </button>
-
-
-                <button
-                    class="filtre"
-                    onclick="filtrarProjectes('web')"
-                >
-                    Web
-                </button>
-
-
-                <button
-                    class="filtre"
-                    onclick="filtrarProjectes('java')"
-                >
-                    Java
-                </button>
-
+                <button class="filtre" onclick="filtrarProjectes('tots')" > Tots </button>
+                <button class="filtre" onclick="filtrarProjectes('web')"> Web </button>
+                <button class="filtre" onclick="filtrarProjectes('java')"> Java </button>
             </div>
 
-
-            <!-- PROJECTES -->
+            <!-- els meus projectes -->
             <section class="llista-projectes">
 
-
-                <!-- PORTAFOLI -->
+                <!-- projecte d'ara el portafoli -->
                 <div class="projecte web">
-
                     <h2>Portafoli personal</h2>
-
                     <p>
                         Desenvolupament del meu portafoli personal
                         per mostrar els meus projectes, tecnologies,
@@ -106,35 +69,28 @@
 
 
                     <div class="tecnologies-projecte">
-
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                         <span>GitHub Pages</span>
-
                     </div>
 
-
                     <div class="botons-projecte">
-
                        <a
                             href="https://github.com/aaronsan-glitch/aaronsan-glitch.github.io"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="boto-projecte boto-github">
-                           
                             Veure a GitHub
                         </a>
-
                     </div>
 
                 </div>
 
 
 
-                <!-- GESTOR DE BIBLIOTECA -->
+                <!-- projecte gestió biblio -->
                 <div class="projecte java">
-
                     <h2>Gestor de Biblioteca</h2>
 
                     <p>
@@ -144,32 +100,23 @@
                         funcionalitats de gestió.
                     </p>
 
-
                     <div class="tecnologies-projecte">
-
                         <span>Java</span>
                         <span>Eclipse</span>
                         <span>Git</span>
-
                     </div>
-
 
                     <a
                         href="https://github.com/aaronsan-glitch/Projecte-Gesti-Biblioteca"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="boto-projecte"
-                    >
+                        class="boto-projecte">
                         Veure a GitHub
                     </a>
-
                 </div>
 
-
-
-                <!-- DUNGEON QUEST -->
+                <!-- projecte de poo avançada de primer de dam -->
                 <div class="projecte java">
-
                     <h2>Dungeon Quest</h2>
 
                     <p>
@@ -178,9 +125,7 @@
                         recull tresors i intenta trobar la sortida.
                     </p>
 
-
                     <div class="tecnologies-projecte">
-
                         <span>Java</span>
                         <span>POO</span>
                         <span>Eclipse</span>
@@ -192,20 +137,14 @@
                         href="https://github.com/aaronsan-glitch/Dungeon-Quest"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="boto-projecte"
-                    >
+                        class="boto-projecte">
                         Veure a GitHub
                     </a>
 
                 </div>
-
-
             </section>
-
         </div>
-
     </main>
-
 
     <footer>
 
@@ -214,8 +153,6 @@
         </p>
 
     </footer>
-
-
     <script src="script.js"></script>
 
 </body>
