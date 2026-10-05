@@ -1,6 +1,5 @@
-/* -------------------- */
-/* GENERAL              */
-/* -------------------- */
+
+/* GENERAL */
 
 * {
     box-sizing: border-box;
@@ -21,9 +20,8 @@ body {
 }
 
 
-/* -------------------- */
-/* CAPÇALERA            */
-/* -------------------- */
+/* CAPÇALERA */
+
 
 .capcalera {
     border-bottom: 1px solid #1f2935;
@@ -72,9 +70,7 @@ body {
 }
 
 
-/* -------------------- */
-/* PÀGINA D'INICI       */
-/* -------------------- */
+/* PÀGINA D'INICI*/
 
 .inici {
     padding: 80px 0;
@@ -218,9 +214,7 @@ body {
 }
 
 
-/* -------------------- */
-/* PÀGINA SOBRE MI      */
-/* -------------------- */
+/* PÀGINA SOBRE MI */
 
 .pagina-sobre {
     padding: 60px 0 80px;
@@ -295,9 +289,7 @@ body {
 }
 
 
-/* -------------------- */
-/* APARTATS             */
-/* -------------------- */
+/* APARTATS */
 
 .apartat {
     margin-bottom: 70px;
@@ -310,9 +302,7 @@ body {
 }
 
 
-/* -------------------- */
-/* TARGETES             */
-/* -------------------- */
+/* TARGETES */
 
 .targeta {
     padding: 25px;
@@ -337,9 +327,7 @@ body {
 }
 
 
-/* -------------------- */
-/* FORMACIÓ / ESTUDIS   */
-/* -------------------- */
+/* FORMACIÓ / ESTUDIS*/
 
 .llista-formacio {
     display: flex;
@@ -406,9 +394,7 @@ body {
 }
 
 
-/* -------------------- */
-/* TECNOLOGIES          */
-/* -------------------- */
+/* TECNOLOGIES*/
 
 .bloc-tecnologies {
     margin-bottom: 30px;
@@ -538,9 +524,7 @@ body {
 }
 
 
-/* -------------------- */
-/* PÀGINA PROJECTES     */
-/* -------------------- */
+/* PÀGINA PROJECTES*/
 
 .pagina-projectes {
     padding: 60px 0 80px;
@@ -682,9 +666,7 @@ body {
 }
 
 
-/* -------------------- */
-/* PÀGINA CONTACTE      */
-/* -------------------- */
+/* PÀGINA CONTACTE*/
 
 .pagina-contacte {
     padding: 60px 0 80px;
@@ -770,9 +752,7 @@ body {
 }
 
 
-/* -------------------- */
-/* FOOTER               */
-/* -------------------- */
+/* FOOTER*/
 
 footer {
     margin-top: 40px;
@@ -787,9 +767,7 @@ footer {
 }
 
 
-/* -------------------- */
-/* MÒBIL                */
-/* -------------------- */
+/* MÒBIL */
 
 @media (max-width: 750px) {
 
